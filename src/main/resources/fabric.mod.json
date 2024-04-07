@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "oldmobknockback",
+  "version": "${version}",
+  "name": "OldMobKnockback",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Andriyko/OldMobKnockback"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/oldmobknockback/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ua.softwind.oldmobknockback.client.OldMobKnockbackClient"
+    ],
+    "main": [
+      "ua.softwind.oldmobknockback.OldMobKnockback"
+    ]
+  },
+  "mixins": [
+    "oldmobknockback.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
