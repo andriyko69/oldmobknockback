@@ -12,12 +12,8 @@
   "icon": "assets/oldmobknockback/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "ua.softwind.oldmobknockback.client.OldMobKnockbackClient"
-    ],
-    "main": [
-      "ua.softwind.oldmobknockback.OldMobKnockback"
-    ]
+    "client": [],
+    "main": []
   },
   "mixins": [
     "oldmobknockback.mixins.json"
