@@ -25,7 +25,7 @@ public abstract class OldMobKnockbackMixin extends Entity implements Attackable 
             this.velocityDirty = true;
             Vec3d vec3d = thisObject.getVelocity();
             Vec3d vec3d2 = (new Vec3d(x, 0.0, z)).normalize().multiply(strength);
-            this.setVelocity(vec3d.x / 2.0 - vec3d2.x, 0.45D, vec3d.z / 2.0 - vec3d2.z);
+            this.setVelocity(vec3d.x / 2.0 - vec3d2.x, thisObject.isOnGround() ? 0.45D : 0.225D, vec3d.z / 2.0 - vec3d2.z);
         }
     }
 }
